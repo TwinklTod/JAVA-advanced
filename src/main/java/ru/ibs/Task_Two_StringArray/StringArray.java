@@ -1,4 +1,4 @@
-package ru.ibs.Task_Two;
+package ru.ibs.Task_Two_StringArray;
 
 import java.util.Scanner;
 

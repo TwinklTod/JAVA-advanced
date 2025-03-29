@@ -1,4 +1,4 @@
-package ru.ibs.Task_One;
+package ru.ibs.Task_One_Calculator;
 
 import java.util.Scanner;
 
