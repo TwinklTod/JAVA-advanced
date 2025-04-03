@@ -1,7 +1,7 @@
 package ru.ibs.Task_Three_Arrays;
 import java.util.*;
 
-class Sweet {
+abstract class Sweet {
     String name;
     double weight;
     double price;
