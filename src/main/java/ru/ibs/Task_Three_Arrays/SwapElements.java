@@ -8,16 +8,16 @@ public class SwapElements {
     public static void Swap() {
         int[] numbers = new int[20];
         Random random = new Random();
-        int maxNegative = Integer.MAX_VALUE, minPositive = Integer.MAX_VALUE;
+        Integer maxNegative = null, minPositive = null;
         int maxNegIndex = -1, minPosIndex = -1;
 
         for (int i = 0; i < numbers.length; i++) {
             numbers[i] = random.nextInt(21) - 10;
-            if (numbers[i] < 0 && numbers[i] < maxNegative) {
+            if (numbers[i] < 0 && (maxNegative == null || numbers[i] > maxNegative)) {
                 maxNegative = numbers[i];
                 maxNegIndex = i;
             }
-            if (numbers[i] > 0 && numbers[i] < minPositive) {
+            if (numbers[i] > 0 && (minPositive == null || numbers[i] < minPositive)) {
                 minPositive = numbers[i];
                 minPosIndex = i;
             }
