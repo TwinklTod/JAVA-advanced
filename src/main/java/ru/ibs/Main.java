@@ -1,5 +1,6 @@
 package ru.ibs;
 
+import ru.ibs.Task_Four_OOP.OOP_Calculator;
 import ru.ibs.Task_One_Calculator.Calculator;
 import ru.ibs.Task_Two_StringArray.StringArray;
 import ru.ibs.Task_Three_Arrays.SwapElements;
@@ -11,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Выберите: (1 - Калькулятор, 2 - Поиск максимального элемента, 3 - Смена элементов массива, 4 - Сладкий подарок)");
+        System.out.println("Выберите: (1 - Калькулятор, 2 - Поиск максимального элемента, 3 - Смена элементов массива, 4 - Сладкий подарок, 5 - Калькулятор ООП)");
         int choice = scanner.nextInt();
         scanner.nextLine(); // Сброс буфера после выбора задания
 
@@ -28,6 +29,9 @@ public class Main {
             case 4:
                 SweetGift sweetGift = new SweetGift();
                 sweetGift.displayGift();
+                break;
+            case 5:
+                OOP_Calculator.calculatorInterface(scanner);
                 break;
             default:
                 System.out.println("Неверный выбор");
