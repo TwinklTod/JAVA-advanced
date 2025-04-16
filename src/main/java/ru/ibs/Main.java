@@ -1,6 +1,5 @@
 package ru.ibs;
 
-import ru.ibs.Task_FIve_WordStats.WordStatistics;
 import ru.ibs.Task_FIve_WordStats.WordStatsApp;
 import ru.ibs.Task_Four_OOP.CalculatorApp;
 import ru.ibs.Task_One_Calculator.Calculator;
