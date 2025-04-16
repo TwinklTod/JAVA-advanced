@@ -1,6 +1,6 @@
 package ru.ibs;
 
-import ru.ibs.Task_Four_OOP.OOP_Calculator;
+import ru.ibs.Task_Four_OOP.CalculatorApp;
 import ru.ibs.Task_One_Calculator.Calculator;
 import ru.ibs.Task_Two_StringArray.StringArray;
 import ru.ibs.Task_Three_Arrays.SwapElements;
@@ -31,7 +31,7 @@ public class Main {
                 sweetGift.displayGift();
                 break;
             case 5:
-                OOP_Calculator.calculatorInterface(scanner);
+                CalculatorApp.run();
                 break;
             default:
                 System.out.println("Неверный выбор");
