@@ -1,5 +1,7 @@
 package ru.ibs;
 
+import ru.ibs.Task_FIve_WordStats.WordStatistics;
+import ru.ibs.Task_FIve_WordStats.WordStatsApp;
 import ru.ibs.Task_Four_OOP.CalculatorApp;
 import ru.ibs.Task_One_Calculator.Calculator;
 import ru.ibs.Task_Two_StringArray.StringArray;
@@ -12,7 +14,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Выберите: (1 - Калькулятор, 2 - Поиск максимального элемента, 3 - Смена элементов массива, 4 - Сладкий подарок, 5 - Калькулятор ООП)");
+        System.out.println("Выберите: (1 - Калькулятор, 2 - Поиск максимального элемента, 3 - Смена элементов массива, 4 - Сладкий подарок, 5 - Калькулятор ООП, 6 - Коллекции)");
         int choice = scanner.nextInt();
         scanner.nextLine(); // Сброс буфера после выбора задания
 
@@ -32,6 +34,9 @@ public class Main {
                 break;
             case 5:
                 CalculatorApp.run();
+                break;
+            case 6:
+                WordStatsApp.run("ПУТЬ ДО ФАЙЛА/файл.txt");
                 break;
             default:
                 System.out.println("Неверный выбор");
