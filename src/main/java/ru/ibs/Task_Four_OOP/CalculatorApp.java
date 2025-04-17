@@ -1,5 +1,6 @@
 package ru.ibs.Task_Four_OOP;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class CalculatorApp {
@@ -18,8 +19,14 @@ public class CalculatorApp {
 
             double result = calculator.calculate();
             System.out.println("Результат " + result);
-        } catch (Exception e) {
-            System.out.println("Ошибка " + e.getMessage());
+        } catch (ArithmeticException e) { // Добавление Exception для задания №6
+            System.out.println("Ошибка вычисления: " + e.getMessage());
+        } catch (IllegalArgumentException e) { // Добавление Exception для задания №6
+            System.out.println("Ошибка ввода операции: " + e.getMessage());
+        } catch (InputMismatchException e) { // Добавление Exception для задания №6
+            System.out.println("Ошибка: введено не число");
+        } catch (Exception e) { // Добавление Exception для задания №6
+            System.out.println("Произошла непредвиденная ошибка: " + e.getMessage());
         }
     }
 }
